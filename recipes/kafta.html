@@ -1,39 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> kafta recipe</title>
-</head>
-<body>
-    <h1>lebanese kafta  <br> with rice!</h1>
-    <a href="../index.html"> go back to index</a>
-    <br>
-    <img src="lasagna2.jpg" alt="kafta image" style="width: 400px;height:300px">
-    <h2>description</h2>
-    <p> so this a very Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-         harum quis, fugit labore aperiam aut perspiciatis voluptates quos expedita. Expedita itaque est ipsam cum delectus aliquid quos earum quaerat ratione.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus obcaecati iusto vero vitae nu<br> velit neque aliquid assumenda inventore quis repellat, recusandae animi molestiae beatae qu
-        \o, nihil debitis consequatur! Ex.
-    </p>
-    <br>
-    <h3>ingredients</h3>
-    <ul>
-        <li>meat</li>
-        <li>rice</li>
-        <li>sauce tomato</li>
-        <li>more salt of course</li>
-    </ul>
-    <br>
-    <h3> steps to do the dish</h3>
-    <ul>
-        <li>first take salt</li>
-        <li>then put salt into pan</li>
-        <li>make salt go fire</li>
-        <li>boom now u have salt dish</li>
-    </ul>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexbox 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      button {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 15%;
+      }
+
+      div {
+        height: 100px;
+        border: 1px solid black;
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        
+      }
+
+      header {
+        background: purple;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+        flex: 1;
+        ;
+      }
+
+      article:nth-of-type(3) {
+        flex: 2;
+      }
+
+      /* Add your flexbox CSS below here */
+
+      section{ /* hayda flex container */
+        display:flex; 
+        /*
+        gap: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        */ 
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+      }
 
 
-</body>
+
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sample flexbox example</h1>
+    </header>
+
+    <div>
+        <button>Smile</button>
+        <button>Laugh</button>
+        <button>Wink</button>
+        <button>Shrug</button>
+        <button>Blush</button>
+      </div>
+
+
+
+    <section>
+      <article>
+        <h2>First article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+
+      <article>
+        <h2>Second article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+      </article>
+
+      <article class="article3">
+        <div>
+            <button>Smile</button>
+            <button>Laugh</button>
+            <button>Wink</button>
+            <button>Shrug</button>
+            <button>Blush</button>
+          </div>
+        <h2>Third article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+
+        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+      </article>
+
+      <article>
+        <h2>Third article</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+
+        <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+      </article>
+     
+    
+    </section>
+  </body>
 </html>
